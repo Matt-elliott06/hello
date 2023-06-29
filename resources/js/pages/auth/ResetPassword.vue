@@ -7,7 +7,7 @@
     </teleport>
 
     <div class="w-full">
-      <Card title="Please Enter New Password">
+
       <div v-if="success">
         <div class="text-green-500 py-2 font-semibold mb-3">{{ success.message }}</div>
 
@@ -45,7 +45,7 @@
           </button>
         </div>
       </form>
-      </Card>
+
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
     </teleport>
 
     <div class="w-full">
-      <Card title="Forgotten Password">
+
         <form @submit.prevent="resetPassword">
           <div>
             <label class="block font-medium text-sm text-gray-500" for="email">
@@ -27,7 +27,7 @@
             </button>
           </div>
         </form>
-      </Card>
+
 
     </div>
   </div>
@@ -36,9 +36,9 @@
 <script>
 
 
-import Card from "../../components/Card";
+
 export default {
-  components: {Card},
+
   data: () => {
     return {
       email: null,
