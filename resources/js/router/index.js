@@ -17,8 +17,9 @@ import Home from '@/js/pages/Home'
 import ProductsIndex from "@/js/pages/Products/Index";
 import ProductsEdit from "@/js/pages/Products/Edit";
 import ProductsAdd from "@/js/pages/Products/Add";
+import ProductsBasket from "@/js/pages/Products/Basket";
 
-
+import Auth from "@/js/pages/auth/index";
 
 
 
@@ -52,7 +53,9 @@ const router = createRouter({
 
         {path: "/products", name: 'ProductsIndex', component: ProductsIndex},
         {path: "/products/add", name: 'ProductsAdd', component: ProductsAdd},
+        {path: "/products/basket", name: 'ProductsBasket', component: ProductsBasket},
         {path: "/products/:id", name: 'ProductsEdit', component: ProductsEdit},
+
 
 
 

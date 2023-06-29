@@ -5,14 +5,11 @@
   <div class="flex">
 
     <div class="flex-auto">
-      <h1>Generic Shop:</h1><br>
 
 
-    </div>
-    <div class="flex-none">
-      <router-link to="/products/add" class = "button">Add A Product</router-link>
 
     </div>
+
 
   </div>
 
@@ -41,6 +38,10 @@
         <div class="View">
           <router-link :to="'/products/' + product.id" class = "button">View</router-link>
         </div>
+        <div class="ATC">
+          <router-link :to="'/products/basket'" @click="AddToCart(product.id)" class = "button">Add to cart</router-link>
+        </div>
+
 
       </div>
     </div>
@@ -74,6 +75,24 @@ export default {
     this.getProducts();
   },
   methods:{
+
+      AddToCart(id) {
+      axios.post('/api/basket', {
+          product_id: id,
+          qty:1,
+        })
+        .then(response => {
+          this.$router.push('/products/basket');
+        })
+        .catch(error => {
+          console.log(error.response.data)
+        })
+
+
+    },
+
+
+
     getProducts(){
       axios.get('/api/products')
       .then(response => {

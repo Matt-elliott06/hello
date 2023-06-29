@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\Blog\BlogImagesController;
 use App\Http\Controllers\Api\Widgets\WidgetsController;
 use App\Http\Controllers\Api\todo\ToDoController;
 use App\Http\Controllers\Api\Products\ProductsController;
+use App\Http\Controllers\Api\Basket\BasketController;
 
 use App\Http\Controllers\Api\Galleries\GalleriesController;
 use App\Http\Controllers\Api\Galleries\GalleriesImagesController;
@@ -56,6 +57,10 @@ Route::namespace('\App\Http\Controllers\Api')
         Route::post('/products/{id}',[ProductsController::class,'edit']);
         Route::delete('/products/{id}',[ProductsController::class,'delete']);
 
+        Route::get('/basket',[BasketController::class,'index']);
+        Route::get('/basket/{id}',[BasketController::class,'get']);
+        Route::post('/basket',[BasketController::class,'add']);
+        Route::delete('/basket/{id}',[BasketController::class,'delete']);
 
 
 
