@@ -1,0 +1,281 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+:root {
+    --fontcolor:#677279;
+    --bg-color:#f0f3f4;
+    --fontbody:'Ubuntu', sans-serif;
+    --green: rgb(57, 192, 167);
+    --greendark: #278b6f;
+    --blue: #0fb6fb;
+    --bluedark: #4285ec;
+    --white:#FFF;
+    --black:#FFF;
+    --red:#F00;
+}
+
+$blue: #6654ff;
+$grey: #ffffff;
+
+
+#home {
+    .box1 {
+        p {
+            color:$blue;
+        }
+    }
+    .footer {
+
+    }
+}
+
+#home .box1 p {
+    color:$blue;
+}
+body{
+    padding: 15px;
+
+}
+textarea {
+    background-color: $grey;
+    border-color: #000000;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 180.800px;
+
+}
+textarea:active{
+
+    border-width: 1px;
+    border-style: solid;
+
+
+}
+input {
+    background-color: $grey;
+    border-color: #000000;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+}
+.Submit{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: $grey;
+    color: #000000;
+    border-color: #000000;
+    margin-bottom: 5px;
+
+
+}
+.table-body {
+
+    border: 1px solid black;
+    color: #000;
+    width: 100%;
+    background-color: $grey;
+}
+.table-head {
+    margin-top: 5px;
+    border: 1px solid black;
+    color: #000;
+    width: 100%;
+    background-color: $grey;
+
+}
+th{
+    border: 1px solid black;
+    color: #000;
+    background-color: $grey;
+}
+td {
+    border: 1px solid black;
+    color: #000;
+    background-color: #FFFFFF;
+}
+button:hover{
+    background-color: #d5d5d5;
+    color: #000000;
+
+}
+
+button:active{
+color: #ff0000;
+
+}
+
+button{
+    margin-top: 5px;
+
+
+}
+
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 100%;
+    border-top: 16px solid #000000;
+    border-bottom: 16px solid #000000;
+    border-width: 5px;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    text-align: center;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.button{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+h1{
+    font-family: 'Rocher';
+    text-align: center;
+    font-size: 50px;
+    color: #ff9000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.box{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #848484;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+        &:hover{
+            border-color: #000000;
+            .Box-Segment{
+                border-top: 3px solid #000000;
+                transition: all 0.5s ease-in-out;
+
+            }
+            .image{
+                overflow: hidden;
+                transition: all 0.5s ease-in-out;
+                img{
+                    transition: all 0.5s ease-in-out;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    text-align: center;
+    background-color: #ffffff;
+    .image{
+
+        height: 180px;
+        width: 100%;
+        display: flex;
+        object-fit: contain;
+        justify-self: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        img{
+            margin: 0 auto;
+
+        }
+
+
+    }
+    .Box-Segment{
+
+        border-top: 3px solid #848484FF;
+
+
+    }
+    .button{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.View{
+    margin-bottom: 10px;
+
+
+}
+
+    .description{
+        border: 2px solid #848484FF;
+        border-radius: 10px;
+
+
+    }
+
+.description{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 5px;
+
+}
+
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .price{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+
+
+
+}//Box
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background: burlywood;
+}
+@font-face {
+    font-family: 'Rocher';
+    src: url('https://assets.codepen.io/9632/RocherColorGX.woff2');
+}
+@font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+}
+
+.Page-Horizon{
+    border-top: 3px solid black;
+margin-bottom: 20px;
+}
